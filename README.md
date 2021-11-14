@@ -29,6 +29,9 @@ const pool=mysql.createPool(
 <br></br>
 # <span style="color:green">week3 DB 내용</span>
 
+## user
+### 학번, 이름, 학과, 학년, 입학일, 이메일 속성을 갖고 있다.
+
 studentID|name|department|grade|entranceDate|email
 ---|---|---|---|---|---|
 12123456|강철수|정보통신공학과|4|2012-03-01|철수@gmail.com|
@@ -39,7 +42,7 @@ studentID|name|department|grade|entranceDate|email
 
 # <span style="color:skyblue">week8 DB 내용</span>
 ## Department
-
+### 과목 이름, 과목 번호, 팀장 학번, 팀장 맡은 날 속성을 갖고 있다.
 Dname|Dnumber|Mgr_ssn|mgr_start_date
 ---|---|---|---|
 졸업 프로젝트|0|121812345|2021-10-24|
@@ -47,6 +50,7 @@ Dname|Dnumber|Mgr_ssn|mgr_start_date
 컴퓨터네트워크|2|122012345|2021-10-24|
 
 ## Employee
+### 이름, 중간 이름, 성, 사원번호, 생일, 주소, 성, 급여, 직속상사 사원번호, 부서 번호를 속성으로 갖고 있다.
  Fname | Minit | Lname | Ssn       | Bdate      | Address | Sex  | Salary | Super_ssn | Dno
  ---|---|---|---|---|---|---|---|---|---|
  기연  | D     | 정    | 121812345 | 1997-12-04 | 평택    | 남   |    300 |           |   0 |
@@ -59,18 +63,20 @@ Dname|Dnumber|Mgr_ssn|mgr_start_date
  # <span style="color:orange">week10 DB 내용</span>
 
 ## Department
-
+### 부서, 부서 번호를 속성으로 갖고 있다.
 Dname          | Dnumber |
 ---|---|
 정보통신공학과|1|
 
 ## user
+### 아이디, 비밀번호, 직책을 속성으로 갖고 있다.
 Id    | Password  | Role  |
 ---|---|---|
 admin | admin1234 | admin |
 test  | test1234  | users |
 
 ## school
+### 학교 번호, 이름, 지역을 속성으로 갖고 있다.
 id | name         | location |
 ---|---|---|
 1 | 인하대학교   | 인천     |
